@@ -1,3 +1,7 @@
 import { greet } from "./module";
 
-console.log(greet("World"));
+function main() {
+  return greet("World");
+}
+
+main();
