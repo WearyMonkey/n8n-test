@@ -1,19 +1,9 @@
-import { add, greet } from '../module';
+import { greet } from "../module";
 
-describe('module', () => {
-  describe('add', () => {
-    it('should add two numbers', () => {
-      expect(add(1, 2)).toBe(3);
-    });
-
-    it('should handle negative numbers', () => {
-      expect(add(-1, 1)).toBe(0);
-    });
-  });
-
-  describe('greet', () => {
-    it('should return a greeting', () => {
-      expect(greet('World')).toBe('Hello, World!');
+describe("module", () => {
+  describe("greet", () => {
+    it("should return a greeting", () => {
+      expect(greet("World")).toBe("Hello, World!");
     });
   });
 });

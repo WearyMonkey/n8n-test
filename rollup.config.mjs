@@ -1,15 +1,13 @@
-import typescript from '@rollup/plugin-typescript';
-import resolve from '@rollup/plugin-node-resolve';
+import typescript from "@rollup/plugin-typescript";
+import resolve from "@rollup/plugin-node-resolve";
 
 export default {
-  input: 'src/index.ts',
+  input: "src/index.ts",
   output: {
-    file: 'dist/index.js',
-    format: 'cjs',
+    file: "dist/index.js",
+    format: "es",
     sourcemap: true,
   },
-  plugins: [
-    resolve(),
-    typescript({ tsconfig: './tsconfig.json' }),
-  ],
+  treeshake: false,
+  plugins: [resolve(), typescript({ tsconfig: "./tsconfig.json" })],
 };

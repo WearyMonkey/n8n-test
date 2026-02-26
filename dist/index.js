@@ -1,8 +1,9 @@
-'use strict';
-
 function greet(name) {
     return `Hello, ${name}!`;
 }
 
-console.log(greet("World"));
+function main() {
+    return greet("World");
+}
+main();
 //# sourceMappingURL=index.js.map
