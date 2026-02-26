@@ -5,8 +5,9 @@ export default {
   input: "src/index.ts",
   output: {
     file: "dist/index.js",
-    format: "cjs",
+    format: "es",
     sourcemap: true,
   },
+  treeshake: false,
   plugins: [resolve(), typescript({ tsconfig: "./tsconfig.json" })],
 };
