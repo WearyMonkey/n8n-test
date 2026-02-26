@@ -1,0 +1,3 @@
+#!/bin/sh
+npm run build
+git diff --exit-code dist/ || (echo "dist/ is out of date. Staged the updated build — please re-commit." && git add dist/ && exit 1)

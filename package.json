@@ -19,7 +19,8 @@
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "git config core.hooksPath .githooks"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^16.0.0",
